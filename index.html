@@ -4,15 +4,17 @@
 	<title>
 		Friend Name
 	</title>
-	<embed src='hi2.mp3' loop="true" autostart="true" width="2" height="0" hidden="true" allow="autoplay">
+	
 	 <meta name="viewport" content="width=device-width, initial-scale=1"/> 
-	 
+	 <embed src='hi2.mp3' loop="true" autostart="true" width="2" height="0" hidden="true" allow="autoplay">
 	  <style type="text/css">
 	  	@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
-
+body{
+	margin:0px;
+}
 h1 {
   font-size: calc(20px + 18vh);
-  line-height: calc(20px + 20vh);
+  line-height: calc(30px + 22vh);
 /*   text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
     0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092;
   color: #fccaff; */
@@ -20,11 +22,11 @@ h1 {
     color: #fff6a9;
   font-family: "Sacramento", cursive;
   text-align: center;
-  animation: blink 12s infinite;
-  -webkit-animation: blink 12s infinite;
+  animation: blink 5s infinite;
+  -webkit-animation: blink 5s infinite;
 }
 
-body {
+.Happy {
   padding: 2vw;
   display: flex;
   justify-content: center;
@@ -84,14 +86,132 @@ body {
     color: #fff6a9;
   }
 }
+.pic{background-color:#222;
+	  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent 7px,
+    rgba(0, 0, 0, 0.8) 9px,
+    rgba(0, 0, 0, 0.8) 13px,
+    transparent 13px
+  );
+	max-width:100%;
+	height: 900px;
+	
+}
+.main {
+  display: flex;
+  overflow: hidden;
+  height: 50vw;
+  background: #333;
+  max-width:80%;
+  margin-left:10%;
+  height:700px;
+ 
+  border:10px solid #fff6a9;
+  box-shadow:  0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+}
+ 
+.main img {
+
+  width:20vw;
+  height:310px; 
+  vertical-align: middle;
+  border: 2px solid white;
+  box-sizing: border-box;
+  transition: opacity .2s;
+}
+ 
+.main:hover img {
+  opacity: 0.5;
+}
+ 
+.main img:hover {
+  opacity: 1;
+}
+ 
+.main .single-column {
+	animation:slide 16s infinite linear;
+}
+ 
+.main .single-column:hover {
+	animation-play-state: paused;
+}
+ 
+.main .single-column:nth-of-type(odd) {
+  align-self: flex-end;
+  --direction: 40%;
+}
+ 
+@keyframes slide {
+  to {
+    -webkit-transform: translateY(var(--direction, -50%));
+            transform: translateY(var(--direction, -50%));
+  }
+}
+
+@media screen and (max-width:550px){
+	h1{
+		font-size:70px;
+		line-height:15vh;
+	}
+
+	.main{
+		border:3px solid #fff6a9;
+		max-width:90%;
+		margin-left:5%;
+		height:70vh;
+	}
+	.main img{
+		width:22vw;
+		border:1px solid white;
+		height:200px;
+	}
+	
+ 	.main .single-column:nth-of-type(odd) {
+  align-self: flex-end;
+  --direction: 35%;
+}
+	
+}
 
 	  </style>
 </head>
 <body>
-	
+<div class="Happy">
 	<h1>Happy Birthday
 	<br> 
 Friend Name</h1>
-
+</div>
+<div class="pic">
+<div class="main">
+	  
+	<div class="single-column">
+		<a href="#"><img src="pic1.jpg" alt="image"></a>
+		<a href="#"><img src="pic3.jpg" alt="image"></a>
+		<a href="#"><img src="pic2.jpg" alt="image"></a>
+		<a href="#"><img src="pic4.jpg" alt="image"></a>
+	</div>
+	<div class="single-column">
+		<a href="#"><img src="pic5.jpg" alt="image"></a>
+		<a href="#"><img src="pic6.jpg" alt="image"></a>
+		<a href="#"><img src="pic7.jpg" alt="image"></a>
+		<a href="#"><img src="pic8.jpg" alt="image"></a>
+	</div>
+	<div class="single-column">
+		<a href="#"><img src="pic9.jpg" alt="image"></a>
+		<a href="#"><img src="pic10.jpg" alt="image"></a>
+		<a href="#"><img src="pic11.jpg" alt="image"></a>
+		<a href="#"><img src="pic12.jpg" alt="image"></a>
+	</div>
+	<div class="single-column">
+		<a href="#"><img src="pic13.jpg" alt="image"></a>
+		<a href="#"><img src="pic14.jpg" alt="image"></a>
+		<a href="#"><img src="pic15.jpg" alt="image"></a>
+		<a href="#"><img src="pic16.jpg" alt="image"></a>
+	</div>
+	
+	
+	</div>
+</div>
 </body>
 </html>
