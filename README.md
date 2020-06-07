@@ -1,7 +1,7 @@
 Happy-Birthday
 
 Want to give surprise to your close ones on their birthday? Here's a website for greeting them.
-Its a webpage, greeting card to birthday wishes. 
+Its a webpage, greeting card for birthday wishes. 
 
 Fork the repositry, Just a slight changes and here it is
      
